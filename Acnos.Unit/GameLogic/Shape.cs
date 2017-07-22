@@ -190,7 +190,7 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Ray_Original()
         {
-            TestOrientedShape(Shape.Ray, Orientation.Original, "8");
+            TestOrientedShape(Shape.Ray, Orientation.Original, "2");
         }
 
 
@@ -211,21 +211,21 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Dancer_Original()
         {
-            TestOrientedShape(Shape.Dancer, Orientation.Original, "8");
+            TestOrientedShape(Shape.Dancer, Orientation.Original, "147");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Eagle_Original()
         {
-            TestOrientedShape(Shape.Eagle, Orientation.Original, "8");
+            TestOrientedShape(Shape.Eagle, Orientation.Original, "1258");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Finch_Original()
         {
-            TestOrientedShape(Shape.Finch, Orientation.Original, "8");
+            TestOrientedShape(Shape.Finch, Orientation.Original, "124");
         }
 
 
@@ -239,7 +239,7 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Diamond_Original()
         {
-            TestOrientedShape(Shape.Diamond, Orientation.Original, "8");
+            TestOrientedShape(Shape.Diamond, Orientation.Original, "37");
         }
 
 
@@ -253,7 +253,7 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Hedgehog_Original()
         {
-            TestOrientedShape(Shape.Hedgehog, Orientation.Original, "8");
+            TestOrientedShape(Shape.Hedgehog, Orientation.Original, "2378");
         }
 
 
@@ -267,7 +267,7 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Talon_Original()
         {
-            TestOrientedShape(Shape.Talon, Orientation.Original, "8");
+            TestOrientedShape(Shape.Talon, Orientation.Original, "178");
         }
 
 
@@ -281,42 +281,42 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Treasure_Original()
         {
-            TestOrientedShape(Shape.Treasure, Orientation.Original, "8");
+            TestOrientedShape(Shape.Treasure, Orientation.Original, "");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Tulip_Original()
         {
-            TestOrientedShape(Shape.Tulip, Orientation.Original, "8");
+            TestOrientedShape(Shape.Tulip, Orientation.Original, "138");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Ramp_Original()
         {
-            TestOrientedShape(Shape.Ramp, Orientation.Original, "8");
+            TestOrientedShape(Shape.Ramp, Orientation.Original, "26");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Sickle_Original()
         {
-            TestOrientedShape(Shape.Sickle, Orientation.Original, "8");
+            TestOrientedShape(Shape.Sickle, Orientation.Original, "268");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Hat_Original()
         {
-            TestOrientedShape(Shape.Hat, Orientation.Original, "8");
+            TestOrientedShape(Shape.Hat, Orientation.Original, "137");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Peak_Original()
         {
-            TestOrientedShape(Shape.Peak, Orientation.Original, "8");
+            TestOrientedShape(Shape.Peak, Orientation.Original, "28");
         }
 
 
@@ -330,28 +330,28 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Mark_Original()
         {
-            TestOrientedShape(Shape.Mark, Orientation.Original, "8");
+            TestOrientedShape(Shape.Mark, Orientation.Original, "2468");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Tower_Original()
         {
-            TestOrientedShape(Shape.Tower, Orientation.Original, "8");
+            TestOrientedShape(Shape.Tower, Orientation.Original, "146");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Tear_Original()
         {
-            TestOrientedShape(Shape.Tear, Orientation.Original, "8");
+            TestOrientedShape(Shape.Tear, Orientation.Original, "1");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Ray_Flip()
         {
-            TestOrientedShape(Shape.Ray, Orientation.Flip, "18");
+            TestOrientedShape(Shape.Ray, Orientation.Flip, "8");
         }
 
 
@@ -372,21 +372,21 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Dancer_Flip()
         {
-            TestOrientedShape(Shape.Dancer, Orientation.Flip, "8");
+            TestOrientedShape(Shape.Dancer, Orientation.Flip, "136");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Eagle_Flip()
         {
-            TestOrientedShape(Shape.Eagle, Orientation.Flip, "8");
+            TestOrientedShape(Shape.Eagle, Orientation.Flip, "1258");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Finch_Flip()
         {
-            TestOrientedShape(Shape.Finch, Orientation.Flip, "8");
+            TestOrientedShape(Shape.Finch, Orientation.Flip, "168");
         }
 
 
@@ -400,7 +400,7 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Diamond_Flip()
         {
-            TestOrientedShape(Shape.Diamond, Orientation.Flip, "8");
+            TestOrientedShape(Shape.Diamond, Orientation.Flip, "37");
         }
 
 
@@ -414,7 +414,7 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Hedgehog_Flip()
         {
-            TestOrientedShape(Shape.Hedgehog, Orientation.Flip, "8");
+            TestOrientedShape(Shape.Hedgehog, Orientation.Flip, "2378");
         }
 
 
@@ -428,7 +428,7 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Talon_Flip()
         {
-            TestOrientedShape(Shape.Talon, Orientation.Flip, "8");
+            TestOrientedShape(Shape.Talon, Orientation.Flip, "123");
         }
 
 
@@ -442,42 +442,42 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Treasure_Flip()
         {
-            TestOrientedShape(Shape.Treasure, Orientation.Flip, "8");
+            TestOrientedShape(Shape.Treasure, Orientation.Flip, "");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Tulip_Flip()
         {
-            TestOrientedShape(Shape.Tulip, Orientation.Flip, "8");
+            TestOrientedShape(Shape.Tulip, Orientation.Flip, "127");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Ramp_Flip()
         {
-            TestOrientedShape(Shape.Ramp, Orientation.Flip, "8");
+            TestOrientedShape(Shape.Ramp, Orientation.Flip, "48");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Sickle_Flip()
         {
-            TestOrientedShape(Shape.Sickle, Orientation.Flip, "8");
+            TestOrientedShape(Shape.Sickle, Orientation.Flip, "248");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Hat_Flip()
         {
-            TestOrientedShape(Shape.Hat, Orientation.Flip, "8");
+            TestOrientedShape(Shape.Hat, Orientation.Flip, "137");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Peak_Flip()
         {
-            TestOrientedShape(Shape.Peak, Orientation.Flip, "8");
+            TestOrientedShape(Shape.Peak, Orientation.Flip, "28");
         }
 
 
@@ -491,21 +491,21 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Mark_Flip()
         {
-            TestOrientedShape(Shape.Mark, Orientation.Flip, "8");
+            TestOrientedShape(Shape.Mark, Orientation.Flip, "2468");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Tower_Flip()
         {
-            TestOrientedShape(Shape.Tower, Orientation.Flip, "8");
+            TestOrientedShape(Shape.Tower, Orientation.Flip, "146");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Tear_Flip()
         {
-            TestOrientedShape(Shape.Tear, Orientation.Flip, "8");
+            TestOrientedShape(Shape.Tear, Orientation.Flip, "1");
         }
 
 
@@ -533,21 +533,21 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Dancer_Right()
         {
-            TestOrientedShape(Shape.Dancer, Orientation.Right, "8");
+            TestOrientedShape(Shape.Dancer, Orientation.Right, "257");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Eagle_Right()
         {
-            TestOrientedShape(Shape.Eagle, Orientation.Right, "8");
+            TestOrientedShape(Shape.Eagle, Orientation.Right, "3678");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Finch_Right()
         {
-            TestOrientedShape(Shape.Finch, Orientation.Right, "8");
+            TestOrientedShape(Shape.Finch, Orientation.Right, "278");
         }
 
 
@@ -561,7 +561,7 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Diamond_Right()
         {
-            TestOrientedShape(Shape.Diamond, Orientation.Right, "8");
+            TestOrientedShape(Shape.Diamond, Orientation.Right, "15");
         }
 
 
@@ -575,7 +575,7 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Hedgehog_Right()
         {
-            TestOrientedShape(Shape.Hedgehog, Orientation.Right, "8");
+            TestOrientedShape(Shape.Hedgehog, Orientation.Right, "1568");
         }
 
 
@@ -589,7 +589,7 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Talon_Right()
         {
-            TestOrientedShape(Shape.Talon, Orientation.Right, "8");
+            TestOrientedShape(Shape.Talon, Orientation.Right, "567");
         }
 
 
@@ -603,77 +603,77 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Treasure_Right()
         {
-            TestOrientedShape(Shape.Treasure, Orientation.Right, "8");
+            TestOrientedShape(Shape.Treasure, Orientation.Right, "");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Tulip_Right()
         {
-            TestOrientedShape(Shape.Tulip, Orientation.Right, "8");
+            TestOrientedShape(Shape.Tulip, Orientation.Right, "167");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Ramp_Right()
         {
-            TestOrientedShape(Shape.Ramp, Orientation.Right, "8");
+            TestOrientedShape(Shape.Ramp, Orientation.Right, "48");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Sickle_Right()
         {
-            TestOrientedShape(Shape.Sickle, Orientation.Right, "8");
+            TestOrientedShape(Shape.Sickle, Orientation.Right, "468");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Hat_Right()
         {
-            TestOrientedShape(Shape.Hat, Orientation.Right, "8");
+            TestOrientedShape(Shape.Hat, Orientation.Right, "157");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Peak_Right()
         {
-            TestOrientedShape(Shape.Peak, Orientation.Right, "8");
+            TestOrientedShape(Shape.Peak, Orientation.Right, "68");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Crown_Right()
         {
-            TestOrientedShape(Shape.Crown, Orientation.Right, "8");
+            TestOrientedShape(Shape.Crown, Orientation.Right, "678");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Mark_Right()
         {
-            TestOrientedShape(Shape.Mark, Orientation.Right, "8");
+            TestOrientedShape(Shape.Mark, Orientation.Right, "2468");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Tower_Right()
         {
-            TestOrientedShape(Shape.Tower, Orientation.Right, "8");
+            TestOrientedShape(Shape.Tower, Orientation.Right, "247");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Tear_Right()
         {
-            TestOrientedShape(Shape.Tear, Orientation.Right, "8");
+            TestOrientedShape(Shape.Tear, Orientation.Right, "7");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Ray_RightFlip()
         {
-            TestOrientedShape(Shape.Ray, Orientation.RightFlip, "8");
+            TestOrientedShape(Shape.Ray, Orientation.RightFlip, "2");
         }
 
 
@@ -694,21 +694,21 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Dancer_RightFlip()
         {
-            TestOrientedShape(Shape.Dancer, Orientation.RightFlip, "8");
+            TestOrientedShape(Shape.Dancer, Orientation.RightFlip, "358");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Eagle_RightFlip()
         {
-            TestOrientedShape(Shape.Eagle, Orientation.RightFlip, "8");
+            TestOrientedShape(Shape.Eagle, Orientation.RightFlip, "2347");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Finch_RightFlip()
         {
-            TestOrientedShape(Shape.Finch, Orientation.RightFlip, "8");
+            TestOrientedShape(Shape.Finch, Orientation.RightFlip, "238");
         }
 
 
@@ -722,7 +722,7 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Diamond_RightFlip()
         {
-            TestOrientedShape(Shape.Diamond, Orientation.RightFlip, "8");
+            TestOrientedShape(Shape.Diamond, Orientation.RightFlip, "15");
         }
 
 
@@ -736,7 +736,7 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Hedgehog_RightFlip()
         {
-            TestOrientedShape(Shape.Hedgehog, Orientation.RightFlip, "8");
+            TestOrientedShape(Shape.Hedgehog, Orientation.RightFlip, "1245");
         }
 
 
@@ -750,7 +750,7 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Talon_RightFlip()
         {
-            TestOrientedShape(Shape.Talon, Orientation.RightFlip, "8");
+            TestOrientedShape(Shape.Talon, Orientation.RightFlip, "345");
         }
 
 
@@ -764,77 +764,77 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Treasure_RightFlip()
         {
-            TestOrientedShape(Shape.Treasure, Orientation.RightFlip, "8");
+            TestOrientedShape(Shape.Treasure, Orientation.RightFlip, "");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Tulip_RightFlip()
         {
-            TestOrientedShape(Shape.Tulip, Orientation.RightFlip, "8");
+            TestOrientedShape(Shape.Tulip, Orientation.RightFlip, "134");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Ramp_RightFlip()
         {
-            TestOrientedShape(Shape.Ramp, Orientation.RightFlip, "8");
+            TestOrientedShape(Shape.Ramp, Orientation.RightFlip, "26");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Sickle_RightFlip()
         {
-            TestOrientedShape(Shape.Sickle, Orientation.RightFlip, "8");
+            TestOrientedShape(Shape.Sickle, Orientation.RightFlip, "246");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Hat_RightFlip()
         {
-            TestOrientedShape(Shape.Hat, Orientation.RightFlip, "8");
+            TestOrientedShape(Shape.Hat, Orientation.RightFlip, "135");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Peak_RightFlip()
         {
-            TestOrientedShape(Shape.Peak, Orientation.RightFlip, "8");
+            TestOrientedShape(Shape.Peak, Orientation.RightFlip, "24");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Crown_RightFlip()
         {
-            TestOrientedShape(Shape.Crown, Orientation.RightFlip, "8");
+            TestOrientedShape(Shape.Crown, Orientation.RightFlip, "234");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Mark_RightFlip()
         {
-            TestOrientedShape(Shape.Mark, Orientation.RightFlip, "8");
+            TestOrientedShape(Shape.Mark, Orientation.RightFlip, "2468");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Tower_RightFlip()
         {
-            TestOrientedShape(Shape.Tower, Orientation.RightFlip, "8");
+            TestOrientedShape(Shape.Tower, Orientation.RightFlip, "368");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Tear_RightFlip()
         {
-            TestOrientedShape(Shape.Tear, Orientation.RightFlip, "8");
+            TestOrientedShape(Shape.Tear, Orientation.RightFlip, "3");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Ray_UpsideDown()
         {
-            TestOrientedShape(Shape.Ray, Orientation.UpsideDown, "8");
+            TestOrientedShape(Shape.Ray, Orientation.UpsideDown, "6");
         }
 
 
@@ -855,21 +855,21 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Dancer_UpsideDown()
         {
-            TestOrientedShape(Shape.Dancer, Orientation.UpsideDown, "8");
+            TestOrientedShape(Shape.Dancer, Orientation.UpsideDown, "358");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Eagle_UpsideDown()
         {
-            TestOrientedShape(Shape.Eagle, Orientation.UpsideDown, "8");
+            TestOrientedShape(Shape.Eagle, Orientation.UpsideDown, "1456");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Finch_UpsideDown()
         {
-            TestOrientedShape(Shape.Finch, Orientation.UpsideDown, "8");
+            TestOrientedShape(Shape.Finch, Orientation.UpsideDown, "568");
         }
 
 
@@ -883,7 +883,7 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Diamond_UpsideDown()
         {
-            TestOrientedShape(Shape.Diamond, Orientation.UpsideDown, "8");
+            TestOrientedShape(Shape.Diamond, Orientation.UpsideDown, "37");
         }
 
 
@@ -897,7 +897,7 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Hedgehog_UpsideDown()
         {
-            TestOrientedShape(Shape.Hedgehog, Orientation.UpsideDown, "8");
+            TestOrientedShape(Shape.Hedgehog, Orientation.UpsideDown, "3467");
         }
 
 
@@ -911,7 +911,7 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Talon_UpsideDown()
         {
-            TestOrientedShape(Shape.Talon, Orientation.UpsideDown, "8");
+            TestOrientedShape(Shape.Talon, Orientation.UpsideDown, "345");
         }
 
 
@@ -925,77 +925,77 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Treasure_UpsideDown()
         {
-            TestOrientedShape(Shape.Treasure, Orientation.UpsideDown, "8");
+            TestOrientedShape(Shape.Treasure, Orientation.UpsideDown, "");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Tulip_UpsideDown()
         {
-            TestOrientedShape(Shape.Tulip, Orientation.UpsideDown, "8");
+            TestOrientedShape(Shape.Tulip, Orientation.UpsideDown, "457");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Ramp_UpsideDown()
         {
-            TestOrientedShape(Shape.Ramp, Orientation.UpsideDown, "8");
+            TestOrientedShape(Shape.Ramp, Orientation.UpsideDown, "26");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Sickle_UpsideDown()
         {
-            TestOrientedShape(Shape.Sickle, Orientation.UpsideDown, "8");
+            TestOrientedShape(Shape.Sickle, Orientation.UpsideDown, "246");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Hat_UpsideDown()
         {
-            TestOrientedShape(Shape.Hat, Orientation.UpsideDown, "8");
+            TestOrientedShape(Shape.Hat, Orientation.UpsideDown, "357");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Peak_UpsideDown()
         {
-            TestOrientedShape(Shape.Peak, Orientation.UpsideDown, "8");
+            TestOrientedShape(Shape.Peak, Orientation.UpsideDown, "46");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Crown_UpsideDown()
         {
-            TestOrientedShape(Shape.Crown, Orientation.UpsideDown, "8");
+            TestOrientedShape(Shape.Crown, Orientation.UpsideDown, "456");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Mark_UpsideDown()
         {
-            TestOrientedShape(Shape.Mark, Orientation.UpsideDown, "8");
+            TestOrientedShape(Shape.Mark, Orientation.UpsideDown, "2468");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Tower_UpsideDown()
         {
-            TestOrientedShape(Shape.Tower, Orientation.UpsideDown, "8");
+            TestOrientedShape(Shape.Tower, Orientation.UpsideDown, "258");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Tear_UpsideDown()
         {
-            TestOrientedShape(Shape.Tear, Orientation.UpsideDown, "8");
+            TestOrientedShape(Shape.Tear, Orientation.UpsideDown, "5");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Ray_UpsideDownFlip()
         {
-            TestOrientedShape(Shape.Ray, Orientation.UpsideDownFlip, "8");
+            TestOrientedShape(Shape.Ray, Orientation.UpsideDownFlip, "4");
         }
 
 
@@ -1016,21 +1016,21 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Dancer_UpsideDownFlip()
         {
-            TestOrientedShape(Shape.Dancer, Orientation.UpsideDownFlip, "8");
+            TestOrientedShape(Shape.Dancer, Orientation.UpsideDownFlip, "257");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Eagle_UpsideDownFlip()
         {
-            TestOrientedShape(Shape.Eagle, Orientation.UpsideDownFlip, "8");
+            TestOrientedShape(Shape.Eagle, Orientation.UpsideDownFlip, "1456");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Finch_UpsideDownFlip()
         {
-            TestOrientedShape(Shape.Finch, Orientation.UpsideDownFlip, "8");
+            TestOrientedShape(Shape.Finch, Orientation.UpsideDownFlip, "245");
         }
 
 
@@ -1044,7 +1044,7 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Diamond_UpsideDownFlip()
         {
-            TestOrientedShape(Shape.Diamond, Orientation.UpsideDownFlip, "8");
+            TestOrientedShape(Shape.Diamond, Orientation.UpsideDownFlip, "37");
         }
 
 
@@ -1058,7 +1058,7 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Hedgehog_UpsideDownFlip()
         {
-            TestOrientedShape(Shape.Hedgehog, Orientation.UpsideDownFlip, "8");
+            TestOrientedShape(Shape.Hedgehog, Orientation.UpsideDownFlip, "3467");
         }
 
 
@@ -1072,7 +1072,7 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Talon_UpsideDownFlip()
         {
-            TestOrientedShape(Shape.Talon, Orientation.UpsideDownFlip, "8");
+            TestOrientedShape(Shape.Talon, Orientation.UpsideDownFlip, "567");
         }
 
 
@@ -1086,77 +1086,77 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Treasure_UpsideDownFlip()
         {
-            TestOrientedShape(Shape.Treasure, Orientation.UpsideDownFlip, "8");
+            TestOrientedShape(Shape.Treasure, Orientation.UpsideDownFlip, "");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Tulip_UpsideDownFlip()
         {
-            TestOrientedShape(Shape.Tulip, Orientation.UpsideDownFlip, "8");
+            TestOrientedShape(Shape.Tulip, Orientation.UpsideDownFlip, "356");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Ramp_UpsideDownFlip()
         {
-            TestOrientedShape(Shape.Ramp, Orientation.UpsideDownFlip, "8");
+            TestOrientedShape(Shape.Ramp, Orientation.UpsideDownFlip, "48");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Sickle_UpsideDownFlip()
         {
-            TestOrientedShape(Shape.Sickle, Orientation.UpsideDownFlip, "8");
+            TestOrientedShape(Shape.Sickle, Orientation.UpsideDownFlip, "468");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Hat_UpsideDownFlip()
         {
-            TestOrientedShape(Shape.Hat, Orientation.UpsideDownFlip, "8");
+            TestOrientedShape(Shape.Hat, Orientation.UpsideDownFlip, "357");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Peak_UpsideDownFlip()
         {
-            TestOrientedShape(Shape.Peak, Orientation.UpsideDownFlip, "8");
+            TestOrientedShape(Shape.Peak, Orientation.UpsideDownFlip, "46");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Crown_UpsideDownFlip()
         {
-            TestOrientedShape(Shape.Crown, Orientation.UpsideDownFlip, "8");
+            TestOrientedShape(Shape.Crown, Orientation.UpsideDownFlip, "456");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Mark_UpsideDownFlip()
         {
-            TestOrientedShape(Shape.Mark, Orientation.UpsideDownFlip, "8");
+            TestOrientedShape(Shape.Mark, Orientation.UpsideDownFlip, "2468");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Tower_UpsideDownFlip()
         {
-            TestOrientedShape(Shape.Tower, Orientation.UpsideDownFlip, "8");
+            TestOrientedShape(Shape.Tower, Orientation.UpsideDownFlip, "258");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Tear_UpsideDownFlip()
         {
-            TestOrientedShape(Shape.Tear, Orientation.UpsideDownFlip, "8");
+            TestOrientedShape(Shape.Tear, Orientation.UpsideDownFlip, "5");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Ray_Left()
         {
-            TestOrientedShape(Shape.Ray, Orientation.Left, "8");
+            TestOrientedShape(Shape.Ray, Orientation.Left, "4");
         }
 
 
@@ -1177,21 +1177,21 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Dancer_Left()
         {
-            TestOrientedShape(Shape.Dancer, Orientation.Left, "8");
+            TestOrientedShape(Shape.Dancer, Orientation.Left, "136");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Eagle_Left()
         {
-            TestOrientedShape(Shape.Eagle, Orientation.Left, "8");
+            TestOrientedShape(Shape.Eagle, Orientation.Left, "2347");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Finch_Left()
         {
-            TestOrientedShape(Shape.Finch, Orientation.Left, "8");
+            TestOrientedShape(Shape.Finch, Orientation.Left, "346");
         }
 
 
@@ -1205,7 +1205,7 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Diamond_Left()
         {
-            TestOrientedShape(Shape.Diamond, Orientation.Left, "8");
+            TestOrientedShape(Shape.Diamond, Orientation.Left, "15");
         }
 
 
@@ -1219,7 +1219,7 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Hedgehog_Left()
         {
-            TestOrientedShape(Shape.Hedgehog, Orientation.Left, "8");
+            TestOrientedShape(Shape.Hedgehog, Orientation.Left, "1245");
         }
 
 
@@ -1233,7 +1233,7 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Talon_Left()
         {
-            TestOrientedShape(Shape.Talon, Orientation.Left, "8");
+            TestOrientedShape(Shape.Talon, Orientation.Left, "123");
         }
 
 
@@ -1247,42 +1247,42 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Treasure_Left()
         {
-            TestOrientedShape(Shape.Treasure, Orientation.Left, "8");
+            TestOrientedShape(Shape.Treasure, Orientation.Left, "");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Tulip_Left()
         {
-            TestOrientedShape(Shape.Tulip, Orientation.Left, "8");
+            TestOrientedShape(Shape.Tulip, Orientation.Left, "235");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Ramp_Left()
         {
-            TestOrientedShape(Shape.Ramp, Orientation.Left, "8");
+            TestOrientedShape(Shape.Ramp, Orientation.Left, "48");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Sickle_Left()
         {
-            TestOrientedShape(Shape.Sickle, Orientation.Left, "8");
+            TestOrientedShape(Shape.Sickle, Orientation.Left, "248");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Hat_Left()
         {
-            TestOrientedShape(Shape.Hat, Orientation.Left, "8");
+            TestOrientedShape(Shape.Hat, Orientation.Left, "135");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Peak_Left()
         {
-            TestOrientedShape(Shape.Peak, Orientation.Left, "8");
+            TestOrientedShape(Shape.Peak, Orientation.Left, "24");
         }
 
 
@@ -1296,28 +1296,28 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Mark_Left()
         {
-            TestOrientedShape(Shape.Mark, Orientation.Left, "8");
+            TestOrientedShape(Shape.Mark, Orientation.Left, "2468");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Tower_Left()
         {
-            TestOrientedShape(Shape.Tower, Orientation.Left, "8");
+            TestOrientedShape(Shape.Tower, Orientation.Left, "368");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Tear_Left()
         {
-            TestOrientedShape(Shape.Tear, Orientation.Left, "8");
+            TestOrientedShape(Shape.Tear, Orientation.Left, "3");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Ray_LeftFlip()
         {
-            TestOrientedShape(Shape.Ray, Orientation.LeftFlip, "8");
+            TestOrientedShape(Shape.Ray, Orientation.LeftFlip, "6");
         }
 
 
@@ -1338,21 +1338,21 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Dancer_LeftFlip()
         {
-            TestOrientedShape(Shape.Dancer, Orientation.LeftFlip, "8");
+            TestOrientedShape(Shape.Dancer, Orientation.LeftFlip, "147");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Eagle_LeftFlip()
         {
-            TestOrientedShape(Shape.Eagle, Orientation.LeftFlip, "8");
+            TestOrientedShape(Shape.Eagle, Orientation.LeftFlip, "3678");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Finch_LeftFlip()
         {
-            TestOrientedShape(Shape.Finch, Orientation.LeftFlip, "8");
+            TestOrientedShape(Shape.Finch, Orientation.LeftFlip, "467");
         }
 
 
@@ -1366,7 +1366,7 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Diamond_LeftFlip()
         {
-            TestOrientedShape(Shape.Diamond, Orientation.LeftFlip, "8");
+            TestOrientedShape(Shape.Diamond, Orientation.LeftFlip, "15");
         }
 
 
@@ -1380,7 +1380,7 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Hedgehog_LeftFlip()
         {
-            TestOrientedShape(Shape.Hedgehog, Orientation.LeftFlip, "8");
+            TestOrientedShape(Shape.Hedgehog, Orientation.LeftFlip, "1568");
         }
 
 
@@ -1394,7 +1394,7 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Talon_LeftFlip()
         {
-            TestOrientedShape(Shape.Talon, Orientation.LeftFlip, "8");
+            TestOrientedShape(Shape.Talon, Orientation.LeftFlip, "178");
         }
 
 
@@ -1408,42 +1408,42 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Treasure_LeftFlip()
         {
-            TestOrientedShape(Shape.Treasure, Orientation.LeftFlip, "8");
+            TestOrientedShape(Shape.Treasure, Orientation.LeftFlip, "");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Tulip_LeftFlip()
         {
-            TestOrientedShape(Shape.Tulip, Orientation.LeftFlip, "8");
+            TestOrientedShape(Shape.Tulip, Orientation.LeftFlip, "578");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Ramp_LeftFlip()
         {
-            TestOrientedShape(Shape.Ramp, Orientation.LeftFlip, "8");
+            TestOrientedShape(Shape.Ramp, Orientation.LeftFlip, "26");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Sickle_LeftFlip()
         {
-            TestOrientedShape(Shape.Sickle, Orientation.LeftFlip, "8");
+            TestOrientedShape(Shape.Sickle, Orientation.LeftFlip, "268");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Hat_LeftFlip()
         {
-            TestOrientedShape(Shape.Hat, Orientation.LeftFlip, "8");
+            TestOrientedShape(Shape.Hat, Orientation.LeftFlip, "157");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Peak_LeftFlip()
         {
-            TestOrientedShape(Shape.Peak, Orientation.LeftFlip, "8");
+            TestOrientedShape(Shape.Peak, Orientation.LeftFlip, "68");
         }
 
 
@@ -1457,21 +1457,21 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Mark_LeftFlip()
         {
-            TestOrientedShape(Shape.Mark, Orientation.LeftFlip, "8");
+            TestOrientedShape(Shape.Mark, Orientation.LeftFlip, "2468");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Tower_LeftFlip()
         {
-            TestOrientedShape(Shape.Tower, Orientation.LeftFlip, "8");
+            TestOrientedShape(Shape.Tower, Orientation.LeftFlip, "247");
         }
 
 
         [TestCategory("GameLogic.ShapeTests"), TestMethod]
         public void Orient_Tear_LeftFlip()
         {
-            TestOrientedShape(Shape.Tear, Orientation.LeftFlip, "8");
+            TestOrientedShape(Shape.Tear, Orientation.LeftFlip, "7");
         }
 
     }
