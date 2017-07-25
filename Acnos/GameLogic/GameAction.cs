@@ -3,7 +3,7 @@ using Acnos.GameLogic.Enums;
 
 namespace Acnos.GameLogic
 {
-    class GameAction : IDeepClone<GameAction>
+    public class GameAction : IDeepClone<GameAction>
     {
         public GameAction(GamePhase state, GameBoard board, ActionType action)
         {

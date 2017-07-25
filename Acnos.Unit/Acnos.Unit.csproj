@@ -53,6 +53,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="GameLogic\DeepClone.cs" />
     <Compile Include="GameLogic\Rotation.cs" />
     <Compile Include="GameLogic\Shape.cs" />
     <Compile Include="GameLogic\PathSet.cs" />

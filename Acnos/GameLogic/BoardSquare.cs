@@ -77,7 +77,7 @@ namespace Acnos.GameLogic
 
         public BoardSquare DeepClone()
         {
-            return new BoardSquare(this.Position, this.Contents, this.Piece.DeepClone());
+            return new BoardSquare(this.Position, this.Contents, this.Piece?.DeepClone());
         }
     }
 }

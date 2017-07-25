@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Acnos.GameLogic.Actions
 {
-    class Player2Treasure : ActionType
+    public class Player2Treasure : ActionType
     {
         public Player2Treasure(BoardLocation treasureLocation)
         {

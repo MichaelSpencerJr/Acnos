@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Acnos.GameLogic.Actions
 {
-    class Player2ReadyToPlace : ActionType
+    public class Player2ReadyToPlace : ActionType
     {
         public override bool CheckAction(GamePhase phase, GameBoard board)
         {
@@ -12,7 +12,7 @@ namespace Acnos.GameLogic.Actions
 
         public override ActionType DeepClone()
         {
-            return this;
+            return new Player2ReadyToPlace();
         }
 
         public override IEnumerable<ActionType> GetActions(GamePhase phase, GameBoard board)

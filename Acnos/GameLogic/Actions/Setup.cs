@@ -68,7 +68,7 @@ namespace Acnos.GameLogic.Actions
 
         public override ActionType DeepClone()
         {
-            return this;
+            return new Setup();
         }
     }
 }

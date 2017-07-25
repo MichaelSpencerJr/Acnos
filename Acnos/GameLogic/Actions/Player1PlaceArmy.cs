@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace Acnos.GameLogic.Actions
 {
-    class Player1PlaceArmy : ActionType
+    public class Player1PlaceArmy : ActionType
     {
         public ShapeOrientation FrontCenter { get; set; }
         public ShapeOrientation FrontLeft { get; set; }
