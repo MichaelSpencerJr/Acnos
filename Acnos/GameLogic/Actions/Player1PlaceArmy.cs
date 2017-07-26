@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace Acnos.GameLogic.Actions
 {
-    public class Player1PlaceArmy : ActionType
+    public class Player1PlaceArmy : IAction, IDeepClone<Player1PlaceArmy>
     {
         public ShapeOrientation FrontCenter { get; set; }
         public ShapeOrientation FrontLeft { get; set; }
@@ -71,7 +71,7 @@ namespace Acnos.GameLogic.Actions
                 this[i] = new ShapeOrientation(Shape.None, Orientation.Original);
         }
 
-        public override bool CheckAction(GamePhase phase, GameBoard board)
+        public bool CheckAction(GamePhase phase, GameBoard board)
         {
             if (phase != GamePhase.Player1SetupArmy) return false;
             var treasure = board.Squares
@@ -103,23 +103,39 @@ namespace Acnos.GameLogic.Actions
             return 0;
         }
 
-        public override ActionType DeepClone()
+        public IEnumerable<IAction> GetActions(GamePhase phase, GameBoard board)
         {
-            return new Player1PlaceArmy(FrontCenter, FrontLeft, FrontRight,
-                MiddleLeft, MiddleRight, BackCenter, BackLeft, BackRight);
-        }
+            var pieceBag = new List<Shape>(board.Player1Reserve);
 
-        public override IEnumerable<ActionType> GetActions(GamePhase phase, GameBoard board)
-        {
-            var pieceBag = "AZZRIBJVLTPYSDWNMCFXEKG".Select(c => (Shape)c).ToList();
+            var targetPiece = -1; //Index of first undecided piece to place
+            int arrowsLeft = 20; //Number of arrows not yet used
+            var pieceLeft = new[] { 0, 0, 0, 0 }; //Number of unplaced pieces
+            //with 1, 2, 3, or 4 arrows left to choose from
+            var emptySquaresLeft = 0;
 
-            int targetPiece;
-            int arrowsLeft = 20;
-            var pieceLeft = new[] { 3, 6, 10, 4 };
-            for (targetPiece = 0; targetPiece < 8; targetPiece++)
+            //Identify number of unused pieces of each arrow count in piece bag
+            foreach (var piece in pieceBag)
+            {
+                var idx = ArrowCount(piece);
+                if (idx > 0 && idx < 5)
+                    pieceLeft[idx - 1]++;
+            }
+
+            //Tally each filled or empty army square
+            for (var currentPiece = 0; currentPiece < 8; currentPiece++)
             {
                 if (this[targetPiece].Shape == Shape.None)
-                    break;
+                {
+                    //Empty square
+                    if (targetPiece == -1)
+                        targetPiece = currentPiece;
+                    emptySquaresLeft++;
+                    continue;
+                }
+
+                //Filled square
+
+                //If attempted move uses pieces which aren't in the bag, move is invalid.
                 if (!pieceBag.Contains(this[targetPiece].Shape)) yield break;
                 pieceBag.Remove(this[targetPiece].Shape);
                 var arrows = ArrowCount(this[targetPiece].Shape);
@@ -127,10 +143,21 @@ namespace Acnos.GameLogic.Actions
                 pieceLeft[arrows]--;
             }
 
-            if (targetPiece == 8)
+            //Check for illegal setup with too many arrows
+            if (arrowsLeft < 0) yield break;
+
+            //Check for fully-populated and legal setup
+            if (targetPiece == -1 && arrowsLeft >= 0)
             {
                 yield return this;
                 yield break;
+            }
+
+            //Check for incomplete setup with no legal solution for unfilled squares
+            var testArrowsLeft = arrowsLeft;
+            for (var i = 0; i < emptySquaresLeft; i++)
+            {
+
             }
 
             var canPlace = new[] { true, false, false, false };
@@ -167,9 +194,25 @@ namespace Acnos.GameLogic.Actions
             return retval;
         }
 
-        public override bool PerformAction(GamePhase phase, GameBoard board, out GamePhase newPhase, out GameBoard newBoard)
+        public bool PerformAction(GamePhase phase, GameBoard board, out GamePhase newPhase, out GameBoard newBoard)
         {
             throw new NotImplementedException();
+        }
+
+        Player1PlaceArmy IDeepClone<Player1PlaceArmy>.DeepClone()
+        {
+            return new Player1PlaceArmy(FrontCenter, FrontLeft, FrontRight,
+                MiddleLeft, MiddleRight, BackCenter, BackLeft, BackRight);
+        }
+
+        public IAction DeepClone()
+        {
+            return ((IDeepClone<Player1PlaceArmy>)this).DeepClone();
+        }
+
+        public bool IsAvailable(GamePhase phase, GameBoard board)
+        {
+            return new Player1PlaceArmy().GetActions(phase, board).Any();
         }
     }
 }

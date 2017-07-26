@@ -7,13 +7,13 @@ namespace Acnos.GameLogic.Actions
     /// From any game state, start a new game and set game state to
     /// start of player 1's setup phase
     /// </summary>
-    public class Setup : ActionType
+    public class Setup : IAction
     {
         /// <summary>
         /// Returns self only, as there's only one way to set up the game board
         /// </summary>
         /// <returns>self</returns>
-        public override IEnumerable<ActionType> GetActions(GamePhase phase, GameBoard board)
+        public override IEnumerable<IAction> GetActions(GamePhase phase, GameBoard board)
         {
             if (phase == GamePhase.None)
                 yield return this;
@@ -66,7 +66,7 @@ namespace Acnos.GameLogic.Actions
             return true;
         }
 
-        public override ActionType DeepClone()
+        public override IAction DeepClone()
         {
             return new Setup();
         }

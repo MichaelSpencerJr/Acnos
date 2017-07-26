@@ -5,7 +5,7 @@ namespace Acnos.GameLogic
 {
     public class GameAction : IDeepClone<GameAction>
     {
-        public GameAction(GamePhase state, GameBoard board, ActionType action)
+        public GameAction(GamePhase state, GameBoard board, IAction action)
         {
             State = state;
             Board = board;
@@ -16,7 +16,7 @@ namespace Acnos.GameLogic
 
         public GameBoard Board { get; set; }
 
-        public ActionType Action { get; set; }
+        public IAction Action { get; set; }
 
         public GameAction DeepClone()
         {

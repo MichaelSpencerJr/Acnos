@@ -3,19 +3,19 @@ using System.Collections.Generic;
 
 namespace Acnos.GameLogic.Actions
 {
-    public class Player2ReadyToPlace : ActionType
+    public class Player2ReadyToPlace : IAction
     {
         public override bool CheckAction(GamePhase phase, GameBoard board)
         {
             return phase == GamePhase.Player2PreSetup;
         }
 
-        public override ActionType DeepClone()
+        public override IAction DeepClone()
         {
             return new Player2ReadyToPlace();
         }
 
-        public override IEnumerable<ActionType> GetActions(GamePhase phase, GameBoard board)
+        public override IEnumerable<IAction> GetActions(GamePhase phase, GameBoard board)
         {
             if (phase == GamePhase.Player2PreSetup)
                 yield return this;

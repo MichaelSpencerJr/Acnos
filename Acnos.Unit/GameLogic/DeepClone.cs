@@ -124,7 +124,7 @@ namespace Acnos.Unit.GameLogic
         public void TestGameAction()
         {
             var originalBoard = new GameBoard();
-            ActionType originalAction = new Setup();
+            IAction originalAction = new Setup();
             var original = new GameAction(GamePhase.None, originalBoard, originalAction);
 
             Assert.AreEqual(GamePhase.None, original.State);
@@ -146,9 +146,7 @@ namespace Acnos.Unit.GameLogic
         [TestCategory("DeepClone"), TestMethod]
         public void TestGameBoard()
         {
-            GameBoard original;
-            GamePhase newPhase;
-            Assert.IsTrue(new Setup().PerformAction(GamePhase.None, new GameBoard(), out newPhase, out original));
+            Assert.IsTrue(new Setup().PerformAction(GamePhase.None, new GameBoard(), out GamePhase newPhase, out GameBoard original));
 
             Assert.AreEqual(64, original.Squares.Count);
             Assert.AreEqual(BoardSquareContents.Empty, original.Squares[BoardLocation.A1].Contents);

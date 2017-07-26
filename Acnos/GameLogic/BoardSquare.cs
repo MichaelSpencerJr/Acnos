@@ -54,10 +54,8 @@ namespace Acnos.GameLogic
 
         public BoardSquare(BoardLocation position, Piece piece)
         {
-            if (piece == null)
-                throw new ArgumentNullException("Contents must be provided instead if square does not contain a piece", nameof(piece));
             Position = position;
-            Piece = piece;
+            Piece = piece ?? throw new ArgumentNullException("Contents must be provided instead if square does not contain a piece", nameof(piece));
         }
 
         public override string ToString()

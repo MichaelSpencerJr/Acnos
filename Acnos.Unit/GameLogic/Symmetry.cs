@@ -24,8 +24,10 @@ namespace Acnos.Unit.GameLogic
                             {
                                 if (b == ' ' && o1 != Orientation.Original) continue;
                                 if (c == ' ' && o2 != Orientation.Original) continue;
-                                var so = new List<ShapeOrientation>();
-                                so.Add(new ShapeOrientation((Shape)a, Orientation.Original));
+                                var so = new List<ShapeOrientation>
+                                {
+                                    new ShapeOrientation((Shape)a, Orientation.Original)
+                                };
                                 if (b != ' ')
                                     so.Add(new ShapeOrientation((Shape)b, o1));
                                 if (c != ' ')

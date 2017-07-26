@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Acnos.GameLogic.Actions
 {
-    public class Player2Treasure : ActionType
+    public class Player2Treasure : IAction
     {
         public Player2Treasure(BoardLocation treasureLocation)
         {
@@ -18,12 +18,12 @@ namespace Acnos.GameLogic.Actions
                 && TreasureLocation.Column > 1 && TreasureLocation.Column < 8;
         }
 
-        public override ActionType DeepClone()
+        public override IAction DeepClone()
         {
             return new Player2Treasure(this.TreasureLocation);
         }
 
-        public override IEnumerable<ActionType> GetActions(GamePhase phase, GameBoard board)
+        public override IEnumerable<IAction> GetActions(GamePhase phase, GameBoard board)
         {
             if (phase == GamePhase.Player2SetupTreasure)
             {
