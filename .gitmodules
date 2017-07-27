@@ -1,3 +1,6 @@
 [submodule "externals/Castle.Windsor"]
 	path = externals/Castle.Windsor
 	url = git@github.com:castleproject/Windsor.git
+[submodule "externals/SpecFlow"]
+	path = externals/SpecFlow
+	url = git@github.com:techtalk/SpecFlow.git
