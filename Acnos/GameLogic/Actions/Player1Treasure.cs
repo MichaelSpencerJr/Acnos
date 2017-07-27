@@ -1,10 +1,17 @@
 ﻿using Acnos.GameLogic.Enums;
 using System.Collections.Generic;
+using System;
+using System.Linq;
 
 namespace Acnos.GameLogic.Actions
 {
     public class Player1Treasure : IAction
     {
+        public Player1Treasure()
+        {
+            TreasureLocation = BoardLocation.B2;
+        }
+
         public Player1Treasure(BoardLocation treasureLocation)
         {
             TreasureLocation = treasureLocation;
@@ -12,18 +19,18 @@ namespace Acnos.GameLogic.Actions
 
         public BoardLocation TreasureLocation { get; set; }
 
-        public override bool CheckAction(GamePhase phase, GameBoard board)
+        public bool CheckAction(GamePhase phase, GameBoard board)
         {
             return phase == GamePhase.Player1SetupTreasure && TreasureLocation.Layer == 2
                 && TreasureLocation.Column > 1 && TreasureLocation.Column < 8;
         }
 
-        public override IAction DeepClone()
+        public IAction DeepClone()
         {
             return new Player1Treasure(this.TreasureLocation);
         }
 
-        public override IEnumerable<IAction> GetActions(GamePhase phase, GameBoard board)
+        public IEnumerable<IAction> GetActions(GamePhase phase, GameBoard board)
         {
             if (phase == GamePhase.Player1SetupTreasure)
             {
@@ -36,7 +43,13 @@ namespace Acnos.GameLogic.Actions
             }
         }
 
-        public override bool PerformAction(GamePhase phase, GameBoard board, out GamePhase newPhase, out GameBoard newBoard)
+        public bool IsAvailable(GamePhase phase, GameBoard board)
+        {
+            return new Player1Treasure().GetActions(phase, board).Any();
+
+        }
+
+        public bool PerformAction(GamePhase phase, GameBoard board, out GamePhase newPhase, out GameBoard newBoard)
         {
             if (!CheckAction(phase, board))
             {

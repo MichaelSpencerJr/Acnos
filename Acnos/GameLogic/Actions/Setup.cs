@@ -1,5 +1,6 @@
 ﻿using Acnos.GameLogic.Enums;
 using System.Collections.Generic;
+using System;
 
 namespace Acnos.GameLogic.Actions
 {
@@ -13,7 +14,7 @@ namespace Acnos.GameLogic.Actions
         /// Returns self only, as there's only one way to set up the game board
         /// </summary>
         /// <returns>self</returns>
-        public override IEnumerable<IAction> GetActions(GamePhase phase, GameBoard board)
+        public IEnumerable<IAction> GetActions(GamePhase phase, GameBoard board)
         {
             if (phase == GamePhase.None)
                 yield return this;
@@ -25,7 +26,7 @@ namespace Acnos.GameLogic.Actions
         /// <param name="phase">Initial game phase</param>
         /// <param name="board">Initial board state</param>
         /// <returns>True only if game phase is None</returns>
-        public override bool CheckAction(GamePhase phase, GameBoard board)
+        public bool CheckAction(GamePhase phase, GameBoard board)
         {
             return phase == GamePhase.None;
         }
@@ -39,7 +40,7 @@ namespace Acnos.GameLogic.Actions
         /// <param name="newPhase">Game phase after action</param>
         /// <param name="newBoard">Board state after action</param>
         /// <returns>True if action was performed successfully</returns>
-        public override bool PerformAction(GamePhase phase, GameBoard board, out GamePhase newPhase, out GameBoard newBoard)
+        public bool PerformAction(GamePhase phase, GameBoard board, out GamePhase newPhase, out GameBoard newBoard)
         {
             if (phase != GamePhase.None)
             {
@@ -66,9 +67,14 @@ namespace Acnos.GameLogic.Actions
             return true;
         }
 
-        public override IAction DeepClone()
+        public IAction DeepClone()
         {
             return new Setup();
+        }
+
+        public bool IsAvailable(GamePhase phase, GameBoard board)
+        {
+            throw new NotImplementedException();
         }
     }
 }

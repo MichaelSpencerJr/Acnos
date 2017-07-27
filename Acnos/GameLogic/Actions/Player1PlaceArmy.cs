@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace Acnos.GameLogic.Actions
 {
-    public class Player1PlaceArmy : IAction, IDeepClone<Player1PlaceArmy>
+    public class Player1PlaceArmy : IAction
     {
         public ShapeOrientation FrontCenter { get; set; }
         public ShapeOrientation FrontLeft { get; set; }
@@ -199,15 +199,10 @@ namespace Acnos.GameLogic.Actions
             throw new NotImplementedException();
         }
 
-        Player1PlaceArmy IDeepClone<Player1PlaceArmy>.DeepClone()
+        public IAction DeepClone()
         {
             return new Player1PlaceArmy(FrontCenter, FrontLeft, FrontRight,
                 MiddleLeft, MiddleRight, BackCenter, BackLeft, BackRight);
-        }
-
-        public IAction DeepClone()
-        {
-            return ((IDeepClone<Player1PlaceArmy>)this).DeepClone();
         }
 
         public bool IsAvailable(GamePhase phase, GameBoard board)
