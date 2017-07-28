@@ -1,6 +1,7 @@
 ﻿using Acnos.GameLogic.Enums;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Acnos.GameLogic
 {
@@ -25,6 +26,36 @@ namespace Acnos.GameLogic
         }
 
         private string _shapeString = null;
+
+        public static Piece FromString(string contents)
+        {
+            if (string.IsNullOrWhiteSpace(contents)) return null;
+            var sidePart = contents[0];
+            var limitPart = "(2)";
+            var skipIdx = 1;
+            if (contents.Length > 1 && contents[1] == '(' && contents.Contains(")"))
+            {
+                skipIdx = contents.IndexOf(')') + 1;
+                limitPart = contents.Substring(1, skipIdx - 2);
+            }
+            int limit;
+            if (!int.TryParse(limitPart.Substring(1, limitPart.Length - 2), out limit))
+                limit = 2;
+            var side = "1WAwa".Contains(sidePart) ? Side.Player1 : Side.Player2;
+            return new Piece(side, limit, new ShapeOrientationCollection(contents.Substring(skipIdx).Split('-').Select(ShapeOrientationFromString), true));
+        }
+
+        private static ShapeOrientation ShapeOrientationFromString(string part)
+        {
+            var shape = (Shape)part[0];
+            var vectors = Piece.GetNonOrientedVectors(shape);
+            for (var orientation = Orientation.Original; orientation <= Orientation.LeftFlip; orientation++)
+            {
+                if (part.Substring(1).Equals(Vector.DistinctVectorsToString(Piece.OrientVectors(vectors, orientation))))
+                    return new ShapeOrientation(shape, orientation);
+            }
+            return new ShapeOrientation(Shape.None, Orientation.Original);
+        }
 
         /// <summary>
         /// Caching accessor for Shapes.ToString(), which sorts the pieces in the stack

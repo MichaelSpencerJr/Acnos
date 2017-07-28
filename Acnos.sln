@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acnos.Unit", "Acnos.Unit\Ac
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Castle.Windsor", "externals\Castle.Windsor\src\Castle.Windsor\Castle.Windsor.csproj", "{5FAD685C-639C-46DF-BA66-37B8ECF1D442}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechTalk.SpecFlow", "externals\SpecFlow\TechTalk.SpecFlow\TechTalk.SpecFlow.csproj", "{413EE28C-4F89-4C6F-BA1E-2CDEE4CD43B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acnos.SpecFlow", "Acnos.SpecFlow\Acnos.SpecFlow.csproj", "{99A62850-5D41-44B1-A4BE-A44C780CC598}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{5FAD685C-639C-46DF-BA66-37B8ECF1D442}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FAD685C-639C-46DF-BA66-37B8ECF1D442}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FAD685C-639C-46DF-BA66-37B8ECF1D442}.Release|Any CPU.Build.0 = Release|Any CPU
+		{413EE28C-4F89-4C6F-BA1E-2CDEE4CD43B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{413EE28C-4F89-4C6F-BA1E-2CDEE4CD43B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{413EE28C-4F89-4C6F-BA1E-2CDEE4CD43B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{413EE28C-4F89-4C6F-BA1E-2CDEE4CD43B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99A62850-5D41-44B1-A4BE-A44C780CC598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99A62850-5D41-44B1-A4BE-A44C780CC598}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99A62850-5D41-44B1-A4BE-A44C780CC598}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99A62850-5D41-44B1-A4BE-A44C780CC598}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

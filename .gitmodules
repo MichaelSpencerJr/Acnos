@@ -4,3 +4,6 @@
 [submodule "externals/SpecFlow"]
 	path = externals/SpecFlow
 	url = git@github.com:techtalk/SpecFlow.git
+[submodule "externals/SpecFlow.VisualStudio"]
+	path = externals/SpecFlow.VisualStudio
+	url = git@github.com:techtalk/SpecFlow.VisualStudio.git
